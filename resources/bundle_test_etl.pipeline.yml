@@ -3,7 +3,7 @@
 resources:
   pipelines:
     bundle_test_etl:
-      name: bundle_test_etl
+      name: bundle_test_etl_${bundle.target}
       catalog: ${var.catalog}
       schema: ${var.schema}
       serverless: true

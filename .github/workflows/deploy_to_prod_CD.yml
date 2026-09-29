@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup Databricks CLI
-        uses: databricks/setup-cli@v0.2.2
+        uses: databricks/setup-cli@main
 
       - name: Deploy DAB to Prod
         run: databricks bundle deploy --target prod
@@ -35,7 +35,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup Databricks CLI
-        uses: databricks/setup-cli@v0
+        uses: databricks/setup-cli@main
 
       - name: Run DAB Job on Prod
         run: databricks bundle run sample_job --target prod --refresh-all
